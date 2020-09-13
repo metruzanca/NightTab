@@ -78,13 +78,13 @@ export const App:React.FC = () => {
           </section>
           <section>
             {/* Buttons */}
-            <Button>{'Hello'}</Button>
-            <Button type={ButtonType.line}>{'Hello'}</Button>
-            <Button type={ButtonType.ring}>{'Hello'}</Button>
+            <Button/>
+            <Button type={ButtonType.line}/>
+            <Button type={ButtonType.ring}/>
             <br/><br/>
-            <Button size={ButtonSize.small}>{'Hello'}</Button>
-            <Button size={ButtonSize.medium}>{'Hello'}</Button>
-            <Button size={ButtonSize.large}>{'Hello'}</Button>
+            <Button size={ButtonSize.small}/>
+            <Button size={ButtonSize.medium}/>
+            <Button size={ButtonSize.large}/>
           </section>
           <section>
             {/* checkbox button */}
