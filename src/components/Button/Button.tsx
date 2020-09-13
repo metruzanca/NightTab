@@ -1,7 +1,7 @@
-import React, { } from 'react';
+import React, { } from 'react'
 import classNames from 'classnames'
 import './Button.css'
-import { Disabled } from 'interfaces';
+import { Disabled } from 'interfaces'
 
 export enum ButtonType{
   default = '',
@@ -28,9 +28,9 @@ export const Button: React.FC<ButtonProps> = ({
   size = ButtonSize.medium,
   onClick: handleClick = undefined,
   disabled = false,
-  children = "Button"
+  children = 'Button'
 }) => {
-  const btnClass = classNames('button', className, type, size);
+  const btnClass = classNames('button', className, type, size)
 
   return (
     <button 
