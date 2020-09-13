@@ -1,4 +1,4 @@
-import React, { } from 'react'
+import React, { useState } from 'react'
 import classNames from 'classnames'
 import './Button.css'
 import { Disabled } from 'interfaces'
@@ -23,14 +23,15 @@ interface ButtonProps extends Disabled{
 }
 
 export const Button: React.FC<ButtonProps> = ({
-  className,
+  className = undefined,
   type = ButtonType.default,
   size = ButtonSize.medium,
   onClick: handleClick = undefined,
   disabled = false,
   children = 'Button'
 }) => {
-  const btnClass = classNames('button', className, type, size)
+  // If btnClass needs to change, replace useState with useMemo
+  const [btnClass] = useState(classNames('button', className, type, size))
 
   return (
     <button 
