@@ -6,13 +6,13 @@
     "body": [
       "import React, { } from 'react'",
       "import classNames from 'classnames'",
-      "import './${1:TM_FILENAME_BASE}.css'",
+      "import './${1:$TM_FILENAME_BASE}.css'",
       "",
-      "interface ${1:TM_FILENAME_BASE}Props {}",
+      "interface ${1:$TM_FILENAME_BASE}Props {}",
       "",
-      "export const ${1:TM_FILENAME_BASE}: React.FC<${1:TM_FILENAME_BASE}Props> = () => {",
+      "export const ${1:$TM_FILENAME_BASE}: React.FC<${1:$TM_FILENAME_BASE}Props> = () => {",
       "  return (",
-      "    <div>I am ${1:TM_FILENAME_BASE}</div>",
+      "    <div>I am ${1:$TM_FILENAME_BASE}</div>",
       "  ) ",
       "}"
     ],
