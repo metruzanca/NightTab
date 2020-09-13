@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import { Button, ButtonType, ButtonSize } from 'components'
+import { Checkbox, CheckboxType } from 'components/Checkbox'
 
 export const App:React.FC = () => {
   return (
@@ -76,6 +77,7 @@ export const App:React.FC = () => {
             {/* icons */}
             {'icons go here'}
           </section>
+          <br/><br/><br/>
           <section>
             {/* Buttons */}
             <Button/>
@@ -86,8 +88,14 @@ export const App:React.FC = () => {
             <Button size={ButtonSize.medium}/>
             <Button size={ButtonSize.large}/>
           </section>
+          <br/><br/><br/>
           <section>
-            {/* checkbox button */}
+            <Checkbox type={CheckboxType.default}/>
+            <Checkbox type={CheckboxType.line}/>
+            <Checkbox type={CheckboxType.ring}/>
+            <Checkbox type={CheckboxType.default} hideCheckbox={true}/>
+            <Checkbox type={CheckboxType.line} hideCheckbox={true}/>
+            <Checkbox type={CheckboxType.ring} hideCheckbox={true}/>
           </section>
           <section>
             {/* radio button */}
