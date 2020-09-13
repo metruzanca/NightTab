@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { Button, ButtonType, ButtonSize } from 'components';
 
 export function App() {
   return (
@@ -27,8 +28,9 @@ export function App() {
       </p>
 
       <p>
-        The goal with this UI-kit is to achieve something like this (if not exactly like this)
+        The goal with this UI-kit is to achieve something like this: 
         <a href="https://nighttab-styleguide.vercel.app/">NightTab V2 style-guide</a>
+        <br/>
         Eventually once this UI-kit is more fleshed out, it will be moved to its own repository,
         powered by <a href="https://storybook.js.org/">storybookjs</a>
       </p>
@@ -46,10 +48,10 @@ export function App() {
           <div style={{
             display:'flex'
           }}>
-            <button>Disable</button>
-            <button>Enable</button>
-            <button>Dark</button>
-            <button>Light</button>
+            <Button>Disable</Button>
+            <Button>Enable</Button>
+            <Button>Dark</Button>
+            <Button>Light</Button>
           </div>
 
           Theme Colour
@@ -69,7 +71,13 @@ export function App() {
           </section>
           <section>
             {/* Buttons */}
-            buttons go here
+            <Button>Hello</Button>
+            <Button type={ButtonType.line}>Hello</Button>
+            <Button type={ButtonType.ring}>Hello</Button>
+            <br/><br/>
+            <Button size={ButtonSize.small}>Hello</Button>
+            <Button size={ButtonSize.medium}>Hello</Button>
+            <Button size={ButtonSize.large}>Hello</Button>
           </section>
           <section>
             {/* checkbox button */}
