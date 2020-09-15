@@ -4,16 +4,16 @@ import uniqueId from 'lodash.uniqueid'
 import './Checkbox.css'
 import { Disabled } from 'interfaces'
 
-export enum CheckboxType{
+export enum CheckboxType {
   default = '',
   line = 'form-input-button-line',
   ring = 'form-input-button-ring',
-} 
+}
 
 interface CheckboxProps extends Disabled {
-  className?:string
-  type?:CheckboxType
-  hideCheckbox?:boolean
+  className?: string
+  type?: CheckboxType
+  hideCheckbox?: boolean
 }
 
 export const Checkbox: React.FC<CheckboxProps> = ({
@@ -30,12 +30,14 @@ export const Checkbox: React.FC<CheckboxProps> = ({
   const [checkboxId] = useState(uniqueId("checkbox-button_"))
 
   return (
-    <div className={btnClass}>
-      <input id={checkboxId} type="checkbox" tabIndex={1} disabled={disabled}/>
-      <label htmlFor={checkboxId} className="mb-0">
-        <span className="label-icon"/>
-        {children}
-      </label>
+    <div className="form-wrap">
+      <div className={btnClass}>
+        <input id={checkboxId} type="checkbox" tabIndex={1} disabled={disabled} />
+        <label htmlFor={checkboxId} className="mb-0">
+          <span className="label-icon" />
+          {children}
+        </label>
+      </div>
     </div>
   )
 }

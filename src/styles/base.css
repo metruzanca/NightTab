@@ -1,0 +1,24 @@
+::selection {
+  background-color: rgb(var(--theme-accent));
+  color: hsl(var(--theme-accent-accessible-color));
+}
+
+html {
+  font-size: var(--theme-root-font-size);
+}
+
+body {
+  background-color: rgb(var(--background-color-theme));
+  color: rgb(var(--theme-style-text));
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: var(--theme-font-ui-name);
+  font-weight: var(--theme-font-ui-weight);
+  font-style: var(--theme-font-ui-style);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background-color var(--layout-transition-extra-fast), opacity var(--layout-duration-02) ease;
+}
