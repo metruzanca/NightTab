@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import { Button, ButtonType, ButtonSize } from 'components'
+import { Checkbox, CheckboxType } from 'components/Checkbox'
 
 export const App:React.FC = () => {
   return (
@@ -76,18 +77,25 @@ export const App:React.FC = () => {
             {/* icons */}
             {'icons go here'}
           </section>
+          <br/><br/><br/>
           <section>
             {/* Buttons */}
-            <Button>{'Hello'}</Button>
-            <Button type={ButtonType.line}>{'Hello'}</Button>
-            <Button type={ButtonType.ring}>{'Hello'}</Button>
+            <Button/>
+            <Button type={ButtonType.line}/>
+            <Button type={ButtonType.ring}/>
             <br/><br/>
-            <Button size={ButtonSize.small}>{'Hello'}</Button>
-            <Button size={ButtonSize.medium}>{'Hello'}</Button>
-            <Button size={ButtonSize.large}>{'Hello'}</Button>
+            <Button size={ButtonSize.small}/>
+            <Button size={ButtonSize.medium}/>
+            <Button size={ButtonSize.large}/>
           </section>
+          <br/><br/><br/>
           <section>
-            {/* checkbox button */}
+            <Checkbox type={CheckboxType.default}/>
+            <Checkbox type={CheckboxType.line}/>
+            <Checkbox type={CheckboxType.ring}/>
+            <Checkbox type={CheckboxType.default} hideCheckbox={true}/>
+            <Checkbox type={CheckboxType.line} hideCheckbox={true}/>
+            <Checkbox type={CheckboxType.ring} hideCheckbox={true}/>
           </section>
           <section>
             {/* radio button */}
