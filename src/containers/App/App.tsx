@@ -1,16 +1,14 @@
 import React from 'react'
-import './App.css'
 import { Button, ButtonType, ButtonSize } from 'components'
 import { Checkbox, CheckboxType } from 'components/Checkbox'
 
 export const App:React.FC = () => {
   return (
-    <div className="App"
-      style={{
-        color:'white',
-        margin:'0 30px'
-      }}
-    >
+    <div style={{
+      textAlign: 'center',
+      color:'white',
+      margin:'0 30px'
+    }}>
       <h1>NightTab v3</h1>
 
       <h6>

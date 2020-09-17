@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import 'styles/reset.css';
 import 'styles/base.css';
 import 'styles/form.css';
