@@ -55,10 +55,10 @@ export const App:React.FC = () => {
       >
         <aside>
           <FormGroup children={[
-            <Button>Disable</Button>,
-            <Button>Enable</Button>,
-            <Button>Dark</Button>,
-            <Button>Light</Button>
+            <Button type={ButtonType.line}>Disable</Button>,
+            <Button type={ButtonType.line}>Enable</Button>,
+            <Button type={ButtonType.line}>Dark</Button>,
+            <Button type={ButtonType.line}>Light</Button>
           ]} />
 
           {'Theme Colour'}
