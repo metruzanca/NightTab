@@ -1,37 +1,12 @@
-/*TODO: Move to theme*/
-.button{
-  --button-background-active:#a4c0f8;
-  --button-background-disabled:'';
-  --button-background-focus-hover:#809bd3;
-  --button-background:#6c85bd;
-  --button-border-active:'';
-  --button-border-disabled:'';
-  --button-link-text-active:'';
-  --button-link-text:'';
-  --button-text-active:'';
-  --button-text-disabled:'';
-  --button-text-focus-active:'';
-  --button-text-focus-hover:'';
-  --button-text:white;
-  --form-ring-accent:'';
-  --form-ring-hover:'';
-  --layout-line-width:'';
-  --layout-transition-extra-fast:'';
-  --theme-font-ui-name:'';
-  --theme-font-ui-style:'';
-  --theme-font-ui-weight:'';
-  --theme-radius:3.2px;
-}
-
 button,
 .button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  background-color: var(--button-background);
+  background-color: rgb(var(--button-background));
   padding: 0.25em 1.25em;
   margin: 0;
-  color: var(--button-text);
+  color: rgb(var(--button-text));
   font-size: 1em;
   font-family: var(--theme-font-ui-name);
   font-weight: var(--theme-font-ui-weight);
@@ -45,11 +20,10 @@ input[type="submit"] {
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
-  /* Are these necessary? Maybe if the button has content thats not a text node*/
-  /* display: inline-flex; */
-  /* flex-direction: row; */
-  /* justify-content: center; */
-  /* align-items: center; */
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   transition: background-color var(--layout-transition-extra-fast), border-color var(--layout-transition-extra-fast), color var(--layout-transition-extra-fast);
 }
 
@@ -63,8 +37,8 @@ input[type="reset"]:focus,
 input[type="reset"]:hover,
 input[type="submit"]:focus,
 input[type="submit"]:hover {
-  background-color: var(--button-background-focus-hover);
-  color: var(--button-text-focus-hover);
+  background-color: rgb(var(--button-background-focus-hover));
+  color: rgb(var(--button-text-focus-hover));
   outline: none;
   text-decoration: none;
 }
@@ -74,8 +48,8 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-  background-color: var(--button-background-active);
-  color: var(--button-text-active);
+  background-color: rgb(var(--button-background-active));
+  color: rgb(var(--button-text-active));
   outline: none;
   text-decoration: none;
   transition: none;
@@ -83,7 +57,7 @@ input[type="submit"]:active {
 
 button.active,
 .button.active {
-  color: var(--button-text-focus-active);
+  color: rgb(var(--button-text-focus-active));
 }
 
 button.disabled,
@@ -102,8 +76,8 @@ button:disabled:active,
 .button:disabled:hover,
 .button:disabled:focus,
 .button:disabled:active {
-  background-color: var(--button-background-disabled);
-  color: var(--button-text-disabled);
+  background-color: rgb(var(--button-background-disabled));
+  color: rgb(var(--button-text-disabled));
   cursor: default;
   text-decoration: none;
 }
@@ -124,12 +98,12 @@ button:disabled:active,
 
 .button-line:focus:after,
 .button-line:hover:after {
-  background-color: var(--button-border-focus-hover);
+  background-color: rgb(var(--button-border-focus-hover));
 }
 
 .button-line:active:after,
 .button-line.active:after {
-  background-color: var(--button-border-active);
+  background-color: rgb(var(--button-border-active));
   transition: none;
 }
 
@@ -141,7 +115,7 @@ button:disabled:active,
 .button-line:disabled:hover:after,
 .button-line:disabled:focus:after,
 .button-line:disabled:active:after {
-  background-color: var(--button-border-disabled);
+  background-color: rgb(var(--button-border-disabled));
 }
 
 .button-ring {
@@ -219,18 +193,18 @@ button [class*=" button-"]:last-child,
 .button-link {
   background-color: transparent;
   border: 0;
-  color: var(--button-link-text);
+  color: rgb(var(--button-link-text));
 }
 
 .button-link:hover,
 .button-link:focus {
   background-color: transparent;
-  color: var(--button-link-text-focus-hover);
+  color: rgb(var(--button-link-text-focus-hover));
 }
 
 .button-link:active {
   background-color: transparent;
-  color: var(--button-link-text-active);
+  color: rgb(var(--button-link-text-active));
 }
 
 .button-link.disabled,

@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import { Button, ButtonType, ButtonSize } from 'components'
 import { Checkbox, CheckboxType } from 'components/Checkbox'
+import { FormGroup } from 'components/FormGroup'
 
 export const App:React.FC = () => {
   return (
@@ -56,10 +57,12 @@ export const App:React.FC = () => {
           <div style={{
             display:'flex'
           }}>
-            <Button>Disable</Button>
-            <Button>Enable</Button>
-            <Button>Dark</Button>
-            <Button>Light</Button>
+          <FormGroup children={[
+              <Button>Disable</Button>,
+              <Button>Enable</Button>,
+              <Button>Dark</Button>,
+              <Button>Light</Button>
+            ]} />
           </div>
 
           {'Theme Colour'}
