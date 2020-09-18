@@ -54,16 +54,12 @@ export const App:React.FC = () => {
         }}
       >
         <aside>
-          <div style={{
-            display:'flex'
-          }}>
           <FormGroup children={[
-              <Button>Disable</Button>,
-              <Button>Enable</Button>,
-              <Button>Dark</Button>,
-              <Button>Light</Button>
-            ]} />
-          </div>
+            <Button>Disable</Button>,
+            <Button>Enable</Button>,
+            <Button>Dark</Button>,
+            <Button>Light</Button>
+          ]} />
 
           {'Theme Colour'}
           <div style={{background:'gray',height:'35px', width:'300px'}}/>
