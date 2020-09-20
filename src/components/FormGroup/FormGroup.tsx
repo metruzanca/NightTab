@@ -10,10 +10,9 @@ interface FormGroupProps extends Disabled {
 }
 
 export const FormGroup: React.FC<FormGroupProps> = ({
-  className = undefined,
   disabled = false,
   hideFormGroup = false,
-  children = '',
+  children,
 }) => {
 
   return (
