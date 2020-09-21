@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import { Button, ButtonType, ButtonSize } from 'components'
-import { Checkbox, CheckboxType } from 'components/Checkbox'
+import { Checkbox, CheckboxType, FormGroup } from 'components'
 
 export const App:React.FC = () => {
   return (
@@ -53,14 +53,12 @@ export const App:React.FC = () => {
         }}
       >
         <aside>
-          <div style={{
-            display:'flex'
-          }}>
-            <Button>Disable</Button>
-            <Button>Enable</Button>
-            <Button>Dark</Button>
-            <Button>Light</Button>
-          </div>
+          <FormGroup children={[
+            <Button type={ButtonType.line}>Disable</Button>,
+            <Button type={ButtonType.line}>Enable</Button>,
+            <Button type={ButtonType.line}>Dark</Button>,
+            <Button type={ButtonType.line}>Light</Button>
+          ]} />
 
           {'Theme Colour'}
           <div style={{background:'gray',height:'35px', width:'300px'}}/>
