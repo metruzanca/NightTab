@@ -1,8 +1,7 @@
 import React from 'react'
 import './App.css'
 import { Button, ButtonType, ButtonSize } from 'components'
-import { Checkbox, CheckboxType } from 'components/Checkbox'
-import { FormGroup } from 'components/FormGroup'
+import { Checkbox, CheckboxType, FormGroup } from 'components'
 
 export const App:React.FC = () => {
   return (
